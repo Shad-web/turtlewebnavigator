@@ -1,4 +1,4 @@
-{$apptype windows}
+﻿{$apptype windows}
 {$reference System.Windows.Forms.dll}
 {$reference System.Drawing.dll}
 uses 
@@ -98,7 +98,8 @@ begin
 end;
 procedure _script_ (sender:object; e : EventArgs);
 begin
-Execute ('testbat.bat');
+web.Url:=new Uri('https://tosdr.org');
+  web.Refresh();
 if web.ScriptErrorsSuppressed=false then
 begin
 script.BackColor:=System.Drawing.Color.Red;
@@ -107,7 +108,7 @@ end;
 
 procedure _addons_ (sender:object; e : EventArgs);
 begin
-  Execute('addons');
+  Execute('Addons.exe');
 end;
 
 procedure _back_(sender: object; e: EventArgs);
