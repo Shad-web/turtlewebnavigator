@@ -27,7 +27,7 @@ procedure InitializeComponent;
         self.webBrowser1.ScriptErrorsSuppressed := true;
         self.webBrowser1.Size := new System.Drawing.Size(543, 375);
         self.webBrowser1.TabIndex := 2;
-        self.webBrowser1.Url := new System.Uri('https://turtleweb.ru/index/rasshirenija/0-16', System.UriKind.Absolute);
+        self.webBrowser1.Url := new System.Uri('https://turtleweb.ru/publ', System.UriKind.Absolute);
         // 
         // pictureBox1
         // 
@@ -48,7 +48,7 @@ procedure InitializeComponent;
         self.FormBorderStyle := System.Windows.Forms.FormBorderStyle.FixedToolWindow;
         self.Icon := (System.Drawing.Icon(resources.GetObject('$this.Icon')));
         self.Name := 'Form1';
-        self.Text := 'Turtle WebNavigator Addons ';
+        self.Text := 'Turtle WebNavigator Addons Desktop';
         self.Load += Form1_Load;
         (System.ComponentModel.ISupportInitialize(self.pictureBox1)).EndInit();
         self.ResumeLayout(false);
